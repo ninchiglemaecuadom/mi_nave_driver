@@ -10,6 +10,7 @@ import 'package:mi_nave_driver/travel_record.dart';
 import 'package:mi_nave_driver/ver_oferta.dart';
 
 import 'Theme/colors.dart';
+import 'login.dart';
 
 
 class MainScreen extends StatefulWidget {
@@ -429,10 +430,10 @@ class MenuLateral extends StatelessWidget{
             ),
             onTap: (){
               // para cerrar la sesion completa borra lo que hayas almacenado en shared preferences
-              // Navigator.pushAndRemoveUntil(
-              //     context,
-              //     MaterialPageRoute(builder: (context) => Login()),
-              //     ModalRoute.withName("/Prelogin"));
+              Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => Login()),
+                  ModalRoute.withName("/Login"));
             },
           ),
 
