@@ -53,11 +53,22 @@ class _VerOfertaState extends State<VerOferta> {
             },
           ),
 
+          
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-
+              
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: FloatingActionButton(
+                  onPressed: () => print('button pressed'),
+                  materialTapTargetSize: MaterialTapTargetSize.padded,
+                  backgroundColor: whiteColor,
+                  child: const Icon(Icons.gps_fixed, size: 36.0, color: Color(0xffb4c0099),),
+                ),
+              ),
+              
               Container(
                 height: MediaQuery.of(context).size.height * 0.49,
                 width: MediaQuery.of(context).size.width,
@@ -228,13 +239,10 @@ class _VerOfertaState extends State<VerOferta> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5)),
                           onPressed: (){
-
-
                             Navigator.pushAndRemoveUntil(
                                 context,
                                 MaterialPageRoute(builder: (context) => Llegue()),
                                 ModalRoute.withName("/Llegue"));
-
                           },
                           child: Container(
                               width: MediaQuery.of(context).size.width *0.5,

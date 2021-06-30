@@ -60,7 +60,8 @@ class _LlegueState extends State<Llegue> {
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-             
+
+
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Align(
@@ -74,10 +75,20 @@ class _LlegueState extends State<Llegue> {
                 ),
               ),
 
-
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
+
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: FloatingActionButton(
+                      onPressed: () => print('button pressed'),
+                      materialTapTargetSize: MaterialTapTargetSize.padded,
+                      backgroundColor: whiteColor,
+                      child: const Icon(Icons.gps_fixed, size: 36.0, color: Color(0xffb4c0099),),
+                    ),
+                  ),
+                  
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: RaisedButton(
