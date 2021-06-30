@@ -4,6 +4,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:mi_nave_driver/edit_profile.dart';
+import 'package:mi_nave_driver/ganancias.dart';
+import 'package:mi_nave_driver/travel_record.dart';
 import 'package:mi_nave_driver/ver_oferta.dart';
 
 import 'Theme/colors.dart';
@@ -372,9 +375,9 @@ class MenuLateral extends StatelessWidget{
                 ],
               ),
               onTap: (){
-                // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-                //   return FavoriteLocations();
-                // }));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                  return Ganancias();
+                }));
               },
             ),
           ),
@@ -387,9 +390,9 @@ class MenuLateral extends StatelessWidget{
               ],
             ),
             onTap: (){
-              // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-              //   return TravelRecord();
-              // }));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                return TravelRecord();
+              }));
             },
           ),
           new ListTile(
@@ -401,9 +404,9 @@ class MenuLateral extends StatelessWidget{
               ],
             ),
             onTap: (){
-              // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-              //   return EditProfile();
-              // }));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                return EditProfile();
+              }));
             },
           ),
           new ListTile(
